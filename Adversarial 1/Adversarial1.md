@@ -126,11 +126,12 @@ p1 = geom_point(data = train_obs, aes(x = x, y = y, color = classes))
 train_obs %>% ggplot() + p1
 ```
 
-![](Adversarial1_files/figure-gfm/unnamed-chunk-1-1.png)<!-- --> From
-predictions in both training and test set, we can see that the neural
-network obtains similar accuracies although train accuracy is higher
-than test one. In the test set, more class 1 observations are wrongly
-classified than in the training set, and this can be seen in the
+![](Adversarial1_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+
+From predictions in both training and test set, we can see that the
+neural network obtains similar accuracies although train accuracy is
+higher than test one. In the test set, more class 1 observations are
+wrongly classified than in the training set, and this can be seen in the
 sensitivity and negative predicted values. From the Kappa statistic, we
 can see similar and acceptable agreement rates.
 
@@ -183,12 +184,13 @@ p2 = ggplot() + geom_tile(data = df1, aes(x = x , y = y, fill = prob)) +  scale_
 p2 
 ```
 
-![](Adversarial1_files/figure-gfm/unnamed-chunk-3-1.png)<!-- --> The
-decision boundary can be clearly appreciated by a straight white line
-crossing the point grid, and it is separating the areas or points where
-predicted probability (in this case probability of belonging to class 1)
-by the model is less than 0.50 and greater than 0.50. In other words,
-this boundary will let us know the predicted class label of an
+![](Adversarial1_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+The decision boundary can be clearly appreciated by a straight white
+line crossing the point grid, and it is separating the areas or points
+where predicted probability (in this case probability of belonging to
+class 1) by the model is less than 0.50 and greater than 0.50. In other
+words, this boundary will let us know the predicted class label of an
 observation based in the side it falls into. So through the training set
 represented at the scatter plot, we can see that few points are going to
 be incorrectly classified, corresponding with the FP and FN values we
