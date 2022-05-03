@@ -32,31 +32,9 @@ and y.
 
 ``` r
 library(mlbench)
-```
-
-    ## Warning: package 'mlbench' was built under R version 4.0.3
-
-``` r
 library(caret)
-```
-
-    ## Warning: package 'caret' was built under R version 4.0.3
-
-    ## Warning: package 'ggplot2' was built under R version 4.0.4
-
-``` r
 library(dplyr)
-```
-
-    ## Warning: package 'dplyr' was built under R version 4.0.3
-
-``` r
 library(plotly)
-```
-
-    ## Warning: package 'plotly' was built under R version 4.0.3
-
-``` r
 library(ggplot2)
 
 set.seed(101)
